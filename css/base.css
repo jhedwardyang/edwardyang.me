@@ -18,7 +18,7 @@ a:hover {
 }
 
 #header > #logo {
-	background: url('../images/logo.png') no-repeat;
+	background: url('/images/logo.png') no-repeat;
 	background-size: 150px 75px;
 	height: 75px;
 }

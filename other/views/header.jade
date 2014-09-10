@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+	head
+		title Edward Yang - Student, Entrepreneur, Developer
+
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+
+		meta(content="Edward Yang is a student, entrepreneur and developer.", name="description")
+		meta(content="Edward Yang", name="author")
+		meta(property="og:site_name", content="Edward Yang - Student, Entrepreneur, Developer")
+		meta(property="og:title", content="Edward Yang - Student, Entrepreneur, Developer")
+		meta(property="og:description", content="Edward Yang is a student, entrepreneur and developer.")
+		meta(property="og:image", content="/images/logo.png")
+		meta(property="og:url", content="http://www.edwardyang.me")
+		meta(property="og:type", content="website")
+
+		link(rel="icon", href="/images/favicon.png", type="image/png")
+		
+		link(rel="stylesheet", href="/assets/bootstrap-3.2.0-dist/css/bootstrap.min.css")
+		link(rel="stylesheet", href="/css/base.css")
+
+		link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700")
+
+		if(css)
+			each c in css
+				link(rel="stylesheet", href="#{c}")
+	body

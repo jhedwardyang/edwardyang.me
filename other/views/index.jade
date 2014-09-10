@@ -1,0 +1,29 @@
+include header
+
+#header.container
+	#logo.col-md-4.col-md-offset-1
+	#nav.col-md-4.col-md-offset-2
+		ul
+			a(href="CV.pdf")
+				li Resume
+			a(href="mailto: hi@edwardyang.me")
+				li Connect with Me
+#hi
+	.container
+		#intro.col-md-10.col-md-offset-1
+			p I'm Edward and I love to hack things.
+			p I'm a student, developer and entrepreneur.
+			p I build fancy things for cool reasons with awesome people. 
+				a(href="https://twitter.com/hashtag/hackthenorth", target="_blank") #HackTheNorth
+#portfolio.container
+	- var ideas = ['Tempest Insight', 'Tessoll', 'Currency Converter', 'Dance Dance Monkey', 'Joy by Chiron', 'g33kvi3w', 'zmlights', 'oos2'];
+	each idea in ideas
+		.item.col-md-4
+			.col-md-12
+				a(href="#")
+					.hud
+						span.glyphicon.glyphicon-search
+				img(data-src="holder.js/320x320/text:#{idea}")
+#isupport
+
+include footer
