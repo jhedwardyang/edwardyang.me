@@ -24,6 +24,10 @@ body {
 #header > #logo {
 	height: 75px;
 }
+#header > #logo > img {
+	margin-top: 10px;
+	width: 250px;
+}
 #header {
 	margin-bottom: 20px;
 	margin-top: 20px;

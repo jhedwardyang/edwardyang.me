@@ -4,14 +4,14 @@ body:after {
   display: none;
 }
 
-.lightboxOverlay {
+.lightboxOverlay { 
   position: absolute;
   top: 0;
   left: 0;
   z-index: 9999;
   background-color: black;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-  opacity: 0.8;
+  opacity: 0.85; /* EDWARD 0.8 to 0.85 */
   display: none;
 }
 
@@ -167,7 +167,7 @@ body:after {
 }
 
 .lb-data .lb-details {
-  width: 85%;
+  width: 90%; /* EDWARD 85 -> 90 */
   float: left;
   text-align: left;
   line-height: 1.1em;

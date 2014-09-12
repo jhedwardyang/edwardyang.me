@@ -22,9 +22,22 @@
       this.wrapAround                  = false;
     }
     
+    var descs = [
+      "",
+      "Tempest (<a href='http://www.tempestinsight.com' target='_blank'>www.tempestinsight.com</a>) is a cloud-based platform to help real estate developers make data-driven decisions and simplify market research by providing high quality data and powerful analysis tools.",
+      "Tessoll (coming soon).",
+      "This simple currency converter was designed as part of the <i>Blackberry Jam Camp</i> program and recieved over ten thousand downloads. It was featured in <i>Built for Blackberry</i> newsletters in both South Africa and England.",
+      "Dance Monkey Dance was a hackathon project for MHacks 2013. It was created to demonstrate the power of mobile and web browsers as well as the HTML5 canvas.",
+      "Joy by Chiron is a health platform built as part of the Next36 Waterloo Hackathon. By using data from the <a href='https://www.thalmic.com/en/myo/'>MYO</a>, we were able to help suggest theraputic stretches for physiotherapy purposes.",
+      "This project was originally a toss-up idea I had while studying for a Logic and Computation midterm. It works by parsing an array; eg. 'year' => '3A', and uses BBCode-like tags to reduce the amount of time needed to update my website.",
+      "zmlights is a free photography service begun by a peer to provide professional photos. The design and infrastructure was a joint project with another developer.",
+      "oos2 was an email-based SMS site designed for users to be able to send text messages via the browser rather than the carrier. It was designed to give the UI-impression of a Web-app for iPhone/iPod Touch users as to smoothly transition away from the SMS app."
+    ];
     // Change to localize to non-english language
-    LightboxOptions.prototype.albumLabel = function(curImageNum, albumSize) {
-      return "Image " + curImageNum + " of " + albumSize;
+    LightboxOptions.prototype.albumLabel = function(curImageNum, albumSize) {// EDWARD
+      if (descs[curImageNum] !== undefined) 
+        return descs[curImageNum] + "<br />" + "<br />" + "Image " + curImageNum + " of " + albumSize;
+      return "<br />" + "<br />" + "Image " + curImageNum + " of " + albumSize;
     };
 
     return LightboxOptions;
@@ -79,10 +92,13 @@
       });
 
       this.$lightbox.hide().on('click', function(event) {
+        //http://stackoverflow.com/questions/11119879/turning-caption-into-a-link-doesnt-work-in-lightbox-2-51
         if ($(event.target).attr('id') === 'lightbox') {
           self.end();
+          return false;
+        } else {
+          return true;
         }
-        return false;
       });
 
       this.$outerContainer.on('click', function(event) {
@@ -332,7 +348,7 @@
       }
     
       if (this.album.length > 1 && this.options.showImageNumberLabel) {
-        this.$lightbox.find('.lb-number').text(this.options.albumLabel(this.currentImageIndex + 1, this.album.length)).fadeIn('fast');
+        this.$lightbox.find('.lb-number').html(this.options.albumLabel(this.currentImageIndex + 1, this.album.length)).fadeIn('fast'); //EDWARD change from .text() to .html()
       } else {
         this.$lightbox.find('.lb-number').hide();
       }
