@@ -67,6 +67,27 @@ body {
 	padding: 50px;
 	text-align: center;
 }
+@media (max-width: 1200px) {
+	#hi #intro {
+		font-size: 34px;
+	}
+}
+@media (max-width: 1000px) {
+	#hi #intro {
+		font-size: 29px;
+	}
+}
+@media (max-width: 720px) {
+	#hi #intro {
+		font-size: 24px;
+	}
+}
+@media (max-width: 420px) {
+	#hi #intro {
+		font-size: 18px;
+	}
+}
+
 #hi #intro a:hover {
 	color: #ccc;
 }
@@ -78,8 +99,16 @@ body {
 .item {
 	margin-top: 50px;
 }
+@media (max-width: 1200px) {
+	.item {
+ 		padding-left: 0;
+    	padding-right: 0;
+	}
+}
 
 .item > .col-md-12 {
+	padding-left: 0;
+    padding-right: 0;
 	position: relative;
 }
 .item > .col-md-12 .hud {
@@ -87,11 +116,11 @@ body {
 	border-radius: 3px;
 	color: white;
 	font-size: 50px;
-	height: 320px;
+	height: 313px;
 	opacity: 0;
 	position: absolute;
 	text-align: center;
-	width: 320px;
+	width: 313px;
 }
 .item > .col-md-12 .hud > span {
 	margin-top: 140px;
@@ -109,10 +138,23 @@ body {
 .item > .col-md-12 img {
 	border: 1px solid #eee;
 	border-radius: 3px;
-	height: 320px;
-	width: 320px;
+	height: 313px;
+	width: 313px;
 }
-
+@media (max-width: 991px) {
+	.item > .col-md-12 .hud {
+		height: 100%;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.item > .col-md-12 img {
+		height: auto;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+}
 
 #footer {
 	background: rgba(37, 37, 37, 1);
