@@ -24,7 +24,7 @@ body {
 #header > #logo {
 	height: 75px;
 }
-#header > #logo > img {
+#header > #logo > a > img {
 	margin-top: 10px;
 	width: 250px;
 }
