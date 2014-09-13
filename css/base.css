@@ -21,9 +21,6 @@ body {
 	background: rgb(247, 247, 247);
 }
 
-#header > #logo {
-	height: 75px;
-}
 #header > #logo > a > img {
 	margin-top: 10px;
 	width: 250px;
@@ -35,7 +32,6 @@ body {
 #header > #nav > ul {
 	list-style-type: none;
 	margin: 0;
-	margin-top: 7px;
 	text-align: right;
 }
 #header > #nav > ul li {
