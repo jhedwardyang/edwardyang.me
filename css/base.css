@@ -161,9 +161,20 @@ body {
 	color: white;
 	font-size: 12px;
 	margin-top: 50px;
-	min-height: 200px;
+}
+#footer #social {
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: 0;
+	margin-top: 30px;
+	text-align: right;
+	width: 300px;
+}
+#footer #social > a > img {
+	height: 30px;
+	width: 30px;
 }
 #footer #copyright{
 	border-top: 1px solid #ccc;
-	margin-top: 170px;
+	margin-bottom: 20px;
 }
