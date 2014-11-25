@@ -16,6 +16,12 @@ a {
 a:hover {
 	text-decoration: none;
 }
+.lb-details {
+	line-height: 16px !important;
+}
+.lb-number a {
+	text-decoration: underline;
+}
 
 body {
 	background: rgb(247, 247, 247);

@@ -21,10 +21,11 @@
       this.alwaysShowNavOnTouchDevices = false;
       this.wrapAround                  = false;
     }
-    
+
     var descs = [
       "",
       "Tempest (<a href='http://www.tempestinsight.com' target='_blank'>www.tempestinsight.com</a>) is a cloud-based platform to help real estate developers make data-driven decisions and simplify market research by providing high quality data and powerful analysis tools.",
+      "Open Pokemon was a 36 hours project completed at Hack The North. By taking live location data as well as voice-recognition tools, an open world of pokemon was created for many to enjoy. This hackathon project was created to show how new wearables can be used to augment our day-to-day lives even in a retro style. This project was a top prize winner at Hack The North.<br /><br />A demo video is available <a href='https://www.youtube.com/watch?v=p7qKFYH3HLg' target='_blank'>here</a> or view more details at the project's <a href='http://challengepost.com/software/open-pokemon' target='_blank'>ChallengePost</a>.",
       "Tessoll (coming soon).",
       "This simple currency converter was designed as part of the <i>Blackberry Jam Camp</i> program and recieved over ten thousand downloads. It was featured in <i>Built for Blackberry</i> newsletters in both South Africa and England.",
       "Dance Monkey Dance was a hackathon project for MHacks 2013. It was created to demonstrate the power of mobile and web browsers as well as the HTML5 canvas.",
@@ -33,6 +34,7 @@
       "zmlights is a free photography service begun by a peer to provide professional photos. The design and infrastructure was a joint project with another developer.",
       "oos2 was an email-based SMS site designed for users to be able to send text messages via the browser rather than the carrier. It was designed to give the UI-impression of a Web-app for iPhone/iPod Touch users as to smoothly transition away from the SMS app."
     ];
+    
     // Change to localize to non-english language
     LightboxOptions.prototype.albumLabel = function(curImageNum, albumSize) {// EDWARD
       if (descs[curImageNum] !== undefined) 
