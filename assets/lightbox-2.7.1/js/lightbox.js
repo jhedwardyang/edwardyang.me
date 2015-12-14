@@ -24,7 +24,7 @@
 
     var descs = [
       "",
-      "Gifify is an iOS app that lets iPhone 6s/6s Plus users share their Live Photos as videos or gifs. Integration with 3D touch and sharing via social media makes Gifify incredibly easy and quick to use.",
+      "Gifify (<a href='https://itunes.apple.com/ca/app/gifify-live-photos/id1065267158?mt=8' target='_blank'>App Store</a>) is an iOS app that lets iPhone 6s/6s Plus users share their Live Photos as videos or gifs. Integration with 3D touch and sharing via social media makes Gifify incredibly easy and quick to use.",
       "Tempest (<a href='http://www.tempestinsight.com' target='_blank'>www.tempestinsight.com</a>) is a cloud-based platform to help real estate developers make data-driven decisions and simplify market research by providing high quality data and powerful analysis tools.",
       "Open Pokemon was a 36 hours project completed at Hack The North. By taking live location data as well as voice-recognition tools, an open world of pokemon was created for many to enjoy. This hackathon project was created to show how new wearables can be used to augment our day-to-day lives even in a retro style. This project was a top prize winner at Hack The North.<br /><br />A demo video is available <a href='https://www.youtube.com/watch?v=p7qKFYH3HLg' target='_blank'>here</a> or view more details at the project's <a href='http://challengepost.com/software/open-pokemon' target='_blank'>ChallengePost</a>.",
       "Tessoll (coming soon).",
